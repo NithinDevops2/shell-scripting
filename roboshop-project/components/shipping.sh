@@ -1,1 +1,1 @@
-echo shipping
+echo Installing shipping

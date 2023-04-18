@@ -1,1 +1,1 @@
-echo cart
+echo Installing cart

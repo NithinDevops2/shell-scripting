@@ -1,1 +1,1 @@
-echo user
+echo Installing user

@@ -1,1 +1,1 @@
-echo frontend
+echo Installing frontend

@@ -1,1 +1,1 @@
-echo redis
+echo Installing redis

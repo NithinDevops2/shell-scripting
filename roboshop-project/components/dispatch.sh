@@ -1,1 +1,1 @@
-echo dispatch
+echo Installing dispatch

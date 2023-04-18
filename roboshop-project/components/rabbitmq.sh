@@ -1,1 +1,1 @@
-echo rabbitmq
+echo Installing rabbitmq

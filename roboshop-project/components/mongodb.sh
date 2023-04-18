@@ -1,1 +1,1 @@
-echo mongodb.sh
+echo Installing mongodb.sh

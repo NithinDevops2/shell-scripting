@@ -1,1 +1,1 @@
-echo catalogue
+echo Installing catalogue

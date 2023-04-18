@@ -1,1 +1,1 @@
-echo mysql
+echo Installing mysql

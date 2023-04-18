@@ -1,1 +1,1 @@
-echo payment
+echo Installing payment
