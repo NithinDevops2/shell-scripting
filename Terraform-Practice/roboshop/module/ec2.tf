@@ -44,7 +44,7 @@ resource "null_resource" "ansible-apply" {
     }
     inline = [ 
         "yum install ansible -y",
-        "ansible-pull -U https://github.com/raghudevopsb62/ansible/tree/f1b20680c9ce62e6e969421ce91598182bd8fd0f roboshop-pull.yml -e COMPONENT=${var.COMPONENT} -e ENV=dev"
+        "ansible-pull -U https://github.com/raghudevopsb62/ansible roboshop-pull.yml -e COMPONENT=${var.COMPONENT} -e ENV=dev"
      ]
   }
 }
