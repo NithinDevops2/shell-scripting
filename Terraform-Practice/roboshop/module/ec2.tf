@@ -25,3 +25,9 @@ resource "aws_ec2_tag" "ec2_name_tag" {
   key         = "Name"
   value       = var.COMPONENT
 }
+
+resource "aws_ec2_tag" "ec2_monitor_tag" {
+  resource_id = aws_spot_instance_request.cheap_worker.spot_instance_id
+  key         = "Name"
+  value       = var.MONITOR
+}
