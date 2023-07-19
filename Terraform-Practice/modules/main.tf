@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "nithinbucketterraform"
-    key    = "practice"
+    key    = "practice/terraform.tfstate"
     region = "us-east-1"
   }
 }
