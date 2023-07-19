@@ -18,10 +18,6 @@ module "shipping" {
   source = "./shipping"
 }
 
-module "cart" {
-  source = "./cart"
-}
-
 module "mysql" {
   source = "./mysql"
 }
