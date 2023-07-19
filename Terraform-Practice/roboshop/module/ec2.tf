@@ -10,7 +10,7 @@
 
 # Request a spot instance at $0.03
 resource "aws_spot_instance_request" "cheap_worker" {
-  ami           = "ami-0bb6af715826253bf"
+  ami           = "ami-0fe118ae150a71466"
   instance_type = "t2.micro"
   vpc_security_group_ids = [aws_security_group.allow-app.id]
   wait_for_fulfillment = true
