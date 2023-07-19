@@ -33,6 +33,9 @@ resource "aws_ec2_tag" "ec2_monitor_tag" {
 }
 
 resource "null_resource" "ansible-apply" {
+    triggers = {
+      abc = timestamp()
+    }
   provisioner "remote-exec" {
     connection {
       host = aws_spot_instance_request.cheap_worker.private_ip
@@ -41,7 +44,7 @@ resource "null_resource" "ansible-apply" {
     }
     inline = [ 
         "yum install ansible -y",
-        "ansible-pull -U https://github.com/raghudevopsb62/ansible roboshop-pull.yml -e COMPONENT=${var.COMPONENT} -e ENV=dev"
+        "ansible-pull -U https://github.com/raghudevopsb62/ansible/tree/f1b20680c9ce62e6e969421ce91598182bd8fd0f roboshop-pull.yml -e COMPONENT=${var.COMPONENT} -e ENV=dev"
      ]
   }
 }
