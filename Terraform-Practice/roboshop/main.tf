@@ -1,43 +1,43 @@
-# module "frontend" {
-#   source = "./frontend"
-# }
+module "frontend" {
+  source = "./frontend"
+}
 
 module "cart" {
   source = "./cart"
 }
 
-# module "catalogue" {
-#   source = "./catalogue"
-# }
+module "catalogue" {
+  source = "./catalogue"
+}
 
-# module "payment" {
-#   source = "./payment"
-# }
+module "payment" {
+  source = "./payment"
+}
 
-# module "shipping" {
-#   source = "./shipping"
-# }
+module "shipping" {
+  source = "./shipping"
+}
 
-# module "cart" {
-#   source = "./cart"
-# }
+module "cart" {
+  source = "./cart"
+}
 
-# module "mysql" {
-#   source = "./mysql"
-# }
+module "mysql" {
+  source = "./mysql"
+}
 
-# module "mongodb" {
-#   source = "./mongodb"
-# }
+module "mongodb" {
+  source = "./mongodb"
+}
 
-# module "redis" {
-#   source = "./redis"
-# }
+module "redis" {
+  source = "./redis"
+}
 
-# module "rabbitmq" {
-#   source = "./rabbitmq"
-# }
+module "rabbitmq" {
+  source = "./rabbitmq"
+}
 
-# module "dispatch;" {
-#   source = "./dispatch;"
-# }
+module "user" {
+  source = "./user"
+}
