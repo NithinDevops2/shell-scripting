@@ -40,6 +40,7 @@ resource "null_resource" "ansible-apply" {
       password = "DevOps321"
     }
     inline = [ 
+        "yum install ansible -y",
         "ansible-pull -U https://github.com/raghudevopsb62/ansible roboshop-pull.yml -e COMPONENT=${var.COMPONENT} -e ENV=dev"
      ]
   }
